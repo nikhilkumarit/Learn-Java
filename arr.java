@@ -14,7 +14,7 @@ class arr{
         // System.out.println(res);
 
         // 2.Print reverse a array.
-        // int arr1[] = {1,2,3,4,5,6};git push 
+        // int arr1[] = {1,2,3,4,5,6}; 
         
         // for(int i = arr1.length - 1;i >= 0;i--){
         //     System.out.println(arr1[i]);
@@ -45,18 +45,45 @@ class arr{
         // }
 
         // 5.Array ka sum aur average nikalo
-        System.out.print("Enter array size : ");
+        // System.out.print("Enter array size : ");
+        // int num = sc.nextInt();
+        // int arr[] = new int[num];
+        // int sum = 0;
+        // double avg = 0;
+        // System.out.print("Enter Array Elements : ");
+        // for(int i = 0;i < num;i++){
+        //     arr[i] = sc.nextInt();
+        //     sum = sum + arr[i];
+        // }
+        // avg = sum / num;
+        // System.out.println("Sum is : "+sum);
+        // System.out.println("Average is : "+avg);
+
+        // 6.Array mein maximum aur minimum number nikalo
+
+        // int arr[] = {10,20,30,40,50};
+        // int max = arr[0];
+        // int min = arr[0];
+        // for(int i = 0;i < arr.length;i++){
+        //     if(arr[i] > max) max = arr[i];
+        //     if(arr[i] < min) min = arr[i];  
+        // }
+        // System.out.println("Maximum is : "+max);
+        // System.out.println("Minimum is : "+min);
+
+        // 7.Array ko reverse print karo
+
+        System.out.print("Enter array range : ");
         int num = sc.nextInt();
         int arr[] = new int[num];
-        int sum = 0;
-        int avg = 0;
-        System.out.print("Enter Array Elements : ");
-        for(int i = 0;i < num;i++){
+        System.out.print("Enter array elements : ");
+        for(int i = 0;i < arr.length;i++){
             arr[i] = sc.nextInt();
-            sum = sum + arr[i];
-            avg = sum / num;
         }
-        System.out.println("Sum is : "+sum);
-        System.out.println("Average is : "+avg);
+        
+        System.out.println("Reverse array elements : ");
+        for(int i = arr.length-1;i >= 0;i--){
+            System.out.println(arr[i]);
+        }
     }
 }
